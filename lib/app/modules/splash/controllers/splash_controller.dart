@@ -1,9 +1,7 @@
 import 'package:get/get.dart';
+import 'package:online_food_app/app/routes/app_pages.dart';
 
 class SplashController extends GetxController {
-  //TODO: Implement SplashController
-
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -12,9 +10,14 @@ class SplashController extends GetxController {
   @override
   void onReady() {
     super.onReady();
+    Future.delayed(
+      Duration(seconds: 3),
+      () {
+        Get.offNamed(Routes.ONBOARDING);
+      },
+    );
   }
 
   @override
   void onClose() {}
-  void increment() => count.value++;
 }

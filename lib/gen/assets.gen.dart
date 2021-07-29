@@ -10,7 +10,10 @@ import 'package:flutter/services.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  SvgGenImage get carrot => const SvgGenImage('assets/images/carrot.svg');
   SvgGenImage get logosvg => const SvgGenImage('assets/images/logosvg.svg');
+  AssetGenImage get onboarding =>
+      const AssetGenImage('assets/images/onboarding.png');
 }
 
 class Assets {
