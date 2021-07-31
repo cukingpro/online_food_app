@@ -9,9 +9,9 @@ import 'package:online_food_app/core/values/colors.dart';
 import 'package:online_food_app/gen/assets.gen.dart';
 import 'package:online_food_app/generated/locales.g.dart';
 
-import '../controllers/sign_in_controller.dart';
+import '../controllers/sign_up_controller.dart';
 
-class SignInView extends GetView<SignInController> {
+class SignUpView extends GetView<SignUpController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,16 +23,18 @@ class SignInView extends GetView<SignInController> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Assets.images.redCarrot.svg(),
-              const SizedBox(height: 100),
+              const SizedBox(height: 50),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  Text(LocaleKeys.sign_in.tr, style: TextStyles.header),
+                  Text(LocaleKeys.sign_up.tr, style: TextStyles.header),
                   const SizedBox(height: 15),
-                  Text(LocaleKeys.sign_in_description.tr,
+                  Text(LocaleKeys.sign_up_description.tr,
                       style: TextStyles.description),
                 ],
               ),
+              const SizedBox(height: 40),
+              CustomTextField(label: LocaleKeys.username.tr),
               const SizedBox(height: 40),
               Obx(
                 () => CustomTextField(
@@ -63,8 +65,7 @@ class SignInView extends GetView<SignInController> {
               ),
               const SizedBox(height: 20),
               Text(
-                LocaleKeys.forgot_password.tr,
-                textAlign: TextAlign.right,
+                LocaleKeys.tos_and_pp.tr,
                 style: TextStyles.description,
               ),
               const SizedBox(height: 30),
@@ -76,7 +77,7 @@ class SignInView extends GetView<SignInController> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text(LocaleKeys.dont_have_an_account.tr),
+                  Text(LocaleKeys.already_have_an_account.tr),
                   TextButton(
                     style: TextButton.styleFrom(
                       primary: AppColors.green,
@@ -84,7 +85,7 @@ class SignInView extends GetView<SignInController> {
                     onPressed: () {
                       Get.offAllNamed(Routes.SIGN_UP);
                     },
-                    child: Text(LocaleKeys.sign_up.tr),
+                    child: Text(LocaleKeys.sign_in.tr),
                   ),
                 ],
               ),

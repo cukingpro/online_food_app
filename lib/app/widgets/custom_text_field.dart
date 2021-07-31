@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:online_food_app/core/themes/text_styles.dart';
-import 'package:online_food_app/generated/locales.g.dart';
-import 'package:get/get.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({
@@ -26,7 +24,9 @@ class CustomTextField extends StatelessWidget {
         const SizedBox(height: 10),
         TextField(
           style: TextStyles.textFieldText,
+          textAlignVertical: TextAlignVertical.center,
           obscureText: obscureText,
+          controller: controller,
           decoration: InputDecoration(
             hintText: label,
             hintStyle: TextStyles.hint,

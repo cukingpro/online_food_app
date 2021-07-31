@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SignInController extends GetxController {
+class SignUpController extends GetxController {
   final TextEditingController emailController = TextEditingController();
+  final TextEditingController usernameController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
 
-  var obscurePassword = true.obs;
+  final obscurePassword = true.obs;
   final isEmailValid = false.obs;
 
   @override
@@ -24,6 +25,7 @@ class SignInController extends GetxController {
   @override
   void onClose() {
     emailController.dispose();
+    usernameController.dispose();
     passwordController.dispose();
     super.onClose();
   }

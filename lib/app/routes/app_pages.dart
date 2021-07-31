@@ -6,6 +6,8 @@ import 'package:online_food_app/app/modules/onboarding/bindings/onboarding_bindi
 import 'package:online_food_app/app/modules/onboarding/views/onboarding_view.dart';
 import 'package:online_food_app/app/modules/sign_in/bindings/sign_in_binding.dart';
 import 'package:online_food_app/app/modules/sign_in/views/sign_in_view.dart';
+import 'package:online_food_app/app/modules/sign_up/bindings/sign_up_binding.dart';
+import 'package:online_food_app/app/modules/sign_up/views/sign_up_view.dart';
 import 'package:online_food_app/app/modules/splash/bindings/splash_binding.dart';
 import 'package:online_food_app/app/modules/splash/views/splash_view.dart';
 
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.SIGN_IN,
       page: () => SignInView(),
       binding: SignInBinding(),
+    ),
+    GetPage(
+      name: _Paths.SIGN_UP,
+      page: () => SignUpView(),
+      binding: SignUpBinding(),
     ),
   ];
 }
