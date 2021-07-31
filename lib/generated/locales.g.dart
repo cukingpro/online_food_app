@@ -25,6 +25,11 @@ class LocaleKeys {
   static const address = 'address';
   static const tos_and_pp = 'tos_and_pp';
   static const already_have_an_account = 'already_have_an_account';
+  static const shop = 'shop';
+  static const explore = 'explore';
+  static const cart = 'cart';
+  static const favorite = 'favorite';
+  static const account = 'account';
 }
 
 class Locales {
@@ -45,5 +50,10 @@ class Locales {
     'tos_and_pp':
         'By continuing you agree to our Terms of Service and Privacy Policy.',
     'already_have_an_account': 'Already have an account?',
+    'shop': 'Shop',
+    'explore': 'Explore',
+    'cart': 'Cart',
+    'favorite': 'Favorite',
+    'account': 'Account',
   };
 }

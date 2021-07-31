@@ -13,5 +13,10 @@
     "username": "Username",
     "address": "Address",
     "tos_and_pp": "By continuing you agree to our Terms of Service and Privacy Policy.",
-    "already_have_an_account": "Already have an account?"
+    "already_have_an_account": "Already have an account?",
+    "shop": "Shop",
+    "explore": "Explore",
+    "cart": "Cart",
+    "favorite": "Favorite",
+    "account": "Account"
 }

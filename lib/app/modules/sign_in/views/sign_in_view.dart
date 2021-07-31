@@ -69,7 +69,9 @@ class SignInView extends GetView<SignInController> {
               ),
               const SizedBox(height: 30),
               LongButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.offAllNamed(Routes.HOME);
+                },
                 text: LocaleKeys.sign_in.tr,
               ),
               const SizedBox(height: 25),

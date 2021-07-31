@@ -71,7 +71,7 @@ class SignUpView extends GetView<SignUpController> {
               const SizedBox(height: 30),
               LongButton(
                 onPressed: () {},
-                text: LocaleKeys.sign_in.tr,
+                text: LocaleKeys.sign_up.tr,
               ),
               const SizedBox(height: 25),
               Row(
@@ -83,7 +83,7 @@ class SignUpView extends GetView<SignUpController> {
                       primary: AppColors.green,
                     ),
                     onPressed: () {
-                      Get.offAllNamed(Routes.SIGN_UP);
+                      Get.offAllNamed(Routes.SIGN_IN);
                     },
                     child: Text(LocaleKeys.sign_in.tr),
                   ),
