@@ -14,6 +14,8 @@ class $AssetsImagesGen {
   SvgGenImage get logosvg => const SvgGenImage('assets/images/logosvg.svg');
   AssetGenImage get onboarding =>
       const AssetGenImage('assets/images/onboarding.png');
+  SvgGenImage get redCarrot =>
+      const SvgGenImage('assets/images/red_carrot.svg');
 }
 
 class Assets {

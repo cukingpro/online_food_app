@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:online_food_app/app/routes/app_pages.dart';
 import 'package:online_food_app/app/widgets/long_button.dart';
 import 'package:online_food_app/core/themes/text_styles.dart';
 import 'package:online_food_app/gen/assets.gen.dart';
@@ -68,7 +69,9 @@ class OnboardingView extends GetView<OnboardingController> {
                     SizedBox(height: 40),
                     LongButton(
                       text: LocaleKeys.get_started.tr,
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.offAllNamed(Routes.SIGN_IN);
+                      },
                     ),
                   ],
                 ),
