@@ -8,9 +8,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  carousel_slider: ^4.0.0
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.22.0
-  get: 4.2.4
+  get: ^4.3.4
 
 dev_dependencies:
   flutter_test:
