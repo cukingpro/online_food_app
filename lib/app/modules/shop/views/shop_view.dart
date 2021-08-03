@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:online_food_app/app/modules/shop/widgets/carousel.dart';
+import 'package:online_food_app/app/widgets/search_bar.dart';
 import 'package:online_food_app/gen/assets.gen.dart';
 
 import '../controllers/shop_controller.dart';
@@ -44,7 +45,7 @@ class ShopView extends GetView<ShopController> {
       centerTitle: true,
       bottom: PreferredSize(
         preferredSize: Size.fromHeight(52),
-        child: Placeholder(fallbackHeight: 52),
+        child: SearchBar().paddingSymmetric(horizontal: 25),
       ),
     );
   }

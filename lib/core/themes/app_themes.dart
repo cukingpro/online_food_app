@@ -14,6 +14,12 @@ class AppThemes {
       showSelectedLabels: true,
       showUnselectedLabels: true,
     ),
+    appBarTheme: AppBarTheme(
+      color: Colors.white,
+    ),
+    iconTheme: IconThemeData(
+      color: Color.fromRGBO(24, 27, 25, 1),
+    ),
   );
   static final dark = ThemeData.dark().copyWith();
 }

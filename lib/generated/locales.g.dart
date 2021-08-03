@@ -30,6 +30,7 @@ class LocaleKeys {
   static const cart = 'cart';
   static const favorite = 'favorite';
   static const account = 'account';
+  static const search_store = 'search_store';
 }
 
 class Locales {
@@ -55,5 +56,6 @@ class Locales {
     'cart': 'Cart',
     'favorite': 'Favorite',
     'account': 'Account',
+    'search_store': 'Search Store',
   };
 }
